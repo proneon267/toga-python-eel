@@ -1,0 +1,85 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Roboto",sans-serif;
+  transition: 0.5s;
+}
+.hero{
+  min-height:100vh;
+  background: #12c2e9;  
+  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+.hero-items{
+  max-width:50vw;
+}
+@media screen and (max-width:900px){
+  .hero-items{
+    max-width:initial;
+  }
+}
+
+.hero-btns{
+  display:flex;
+  justify-content:center;
+}
+@media screen and (max-width:300px){
+  .hero-btns{
+    flex-direction:column;
+    align-items:center;
+  }
+}
+.white{
+  border: 1px solid white;
+  color:white;
+}
+.white:hover,
+.white:focus{
+  background:white;
+  color: #C272ED;
+}
+.hero-title{
+  font-size:3rem;
+  line-height:1.2;
+  word-break:break-word;
+  font-weight:350;
+  text-align:center;
+  padding:1rem;
+}
+.hero-text{
+  font-size:1.2rem;
+  line-height:1.5;
+  text-align:center;
+  word-break:break-word;
+  padding:1.25rem;
+}
+.btn{
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 16px;
+  margin: 16px;
+  width: max-content;
+  transition: 0.25s;
+  overflow-wrap: break-word;
+}
+@media screen and (max-width: 300px) {
+  .btn{
+    width: unset;
+    overflow-wrap: break-word;
+    text-align:center;
+  }
+}
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  cursor:pointer;
+}
