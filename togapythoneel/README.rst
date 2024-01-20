@@ -10,3 +10,9 @@ Minimalist Example of using Toga WebView with Python-eel for Electron Style apps
 .. _`Briefcase`: https://briefcase.readthedocs.io/
 .. _`The BeeWare Project`: https://beeware.org/
 .. _`becoming a financial member of BeeWare`: https://beeware.org/contributing/membership
+
+Run using:
+```
+briefcase dev or
+briefcase run android
+```
